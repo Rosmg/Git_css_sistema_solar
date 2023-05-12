@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+    background-image: url(https://www.misteriosdoespaco.blog.br/wp-content/uploads/2018/06/extra_large-1528384240-cover-image-1024x576.jpg);
+    background-size: cover;
+}
+.sol{
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENJGpyKa27SJt8vsfclBrJ8cRH6mXZgv8Wg&usqp=CAU);
+    background-size: cover;
+    box-shadow: -8px -8px 8px black inset;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: solacao 10s linear infinite;
+}
+.terra{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(https://thumbs.dreamstime.com/b/mapa-detalhado-de-alta-resolução-da-terra-físico-do-mundo-com-detalhes-visão-satélite-achatada-planeta-sua-geografia-e-213183604.jpg);
+    background-size: cover;
+    box-shadow: -3px -3px 3px black inset;
+    animation: rotacao 35s linear infinite;
+}
+/*@keyframes solacao{
+    to{background-position: 100%;}
+}
+@keyframes rotacao{
+    to{}
+} */
