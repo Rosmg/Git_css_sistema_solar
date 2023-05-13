@@ -9,15 +9,15 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100vh;
-    background-image: url(https://www.misteriosdoespaco.blog.br/wp-content/uploads/2018/06/extra_large-1528384240-cover-image-1024x576.jpg);
+    background-image: url(maps/fundo_estelar.jpg);
     background-size: cover;
 }
 .sol{
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     /* border: 1px solid white; */
     border-radius: 50%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENJGpyKa27SJt8vsfclBrJ8cRH6mXZgv8Wg&usqp=CAU);
+    background-image: url(maps/sol.jpeg);
     background-size: cover;
     box-shadow: -8px -8px 8px black inset;
     position: absolute;
@@ -25,18 +25,126 @@ body{
     top: 50%;
     animation: solacao 10s linear infinite;
 }
-.terra{
-    width: 20px;
-    height: 20px;
+.mercurio{
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-image: url(https://thumbs.dreamstime.com/b/mapa-detalhado-de-alta-resolução-da-terra-físico-do-mundo-com-detalhes-visão-satélite-achatada-planeta-sua-geografia-e-213183604.jpg);
+    background-image: url(maps/mercurio.jpg);
     background-size: cover;
-    box-shadow: -3px -3px 3px black inset;
-    animation: rotacao 35s linear infinite;
+    position: absolute;
+    box-shadow: -2px -2px 2px black inset;
+    left: 51%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    animation: orbita2 20s linear infinite;
 }
-/*@keyframes solacao{
+@keyframes orbita2{
+    from{transform:rotate(0deg)translateX(75px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(75px) rotate(-360deg);}
+}
+.venus{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: url(maps/venus.jpg);
+    background-size: cover;
+    position: absolute;
+    box-shadow: -2px -2px 2px black inset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbita3 15s linear infinite;
+}
+@keyframes orbita3{
+    from{transform:rotate(0deg)translateX(100px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(100px) rotate(-360deg);}
+}
+.terra{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(maps/terra.jpg);
+    background-size: cover;
+    position: absolute;
+    box-shadow: -3px -3px 3px black inset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbita4 13s linear infinite;
+}
+@keyframes orbita4{
+    from{transform:rotate(0deg)translateX(150px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(150px) rotate(-360deg);}
+}
+.marte{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(maps/marte.jpg);
+    background-size: cover;
+    position: absolute;
+    box-shadow: -3px -3px 3px black inset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbita5 14s linear infinite;
+}
+@keyframes orbita5{
+    from{transform:rotate(0deg)translateX(220px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(220px) rotate(-360deg);}
+}
+@keyframes solacao{
     to{background-position: 100%;}
 }
 @keyframes rotacao{
     to{}
-} */
+} 
+.mercurio-linha,.venus-linha-1,.terra-linha-1,.marte-linha-1,.jupiter-linha-1,.saturno-linha-1,.urano-linha-1,.netuno-linha-1{
+    border-radius: 50%;
+    border:1px dotted #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mercurio-linha{
+    height: 170px;
+    width: 170px;
+}
+.venus-linha-1{
+    height: 220px;
+    width: 220px;
+}
+.terra-linha-1{
+    height: 330px;
+    width: 330px;
+}
+.terra-circulo{
+    height: 65px;
+    width: 65px;
+    border:1px dotted #fff;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.lua{
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left:85%;
+    top: 85%;
+    animation: orbitaL 3s linear infinite;
+}
+@keyframes orbitaL{
+    from{transform:rotate(0deg)translateX(0px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(0px) rotate(-360deg);}
+}
+.marte-linha-1{
+    height: 470px;
+    width: 470px;
+}
