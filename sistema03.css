@@ -23,7 +23,7 @@ body {
 }
 
 .estrela_ponto {
-background: #FFF;
+background: #fbecba;
 border-radius: 100px;
 width: 1px;
 height: 1px;
@@ -2153,6 +2153,11 @@ animation: flash 5s linear infinite;
     opacity: 0;
     }
 }
+@-webkit-keyframes gravity {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .sol{
     width: 120px;
     height: 120px;
@@ -2168,10 +2173,10 @@ animation: flash 5s linear infinite;
     position: absolute;
     left: 600px;
     top: 300px;
-    animation: solacao 10s linear infinite;
+    animation: solacao 20s linear infinite;
 }
 @keyframes solacao{
-    to{background-position: 100%;}
+    to{background-position: 101%;}
 }
 .mercurio{
     width: 10px;
@@ -2273,14 +2278,14 @@ animation: flash 5s linear infinite;
     background-size: cover;
     position: absolute;
     box-shadow: -3px -3px 3px black inset;
-    left: 660px;
-    top: 360px;
+    left: 630px;
+    top: 340px;
     transform: translate(-50%, -50%);
     animation: orbita6 119s linear infinite;
 }
 @keyframes orbita6{
-    from{transform:rotate(0deg)translateX(290px) rotate(0deg);}
-    to{transform:rotate(360deg)translateX(290px) rotate(-360deg);}
+    from{transform:rotate(0deg)translateX(320px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(320px) rotate(-360deg);}
 }
 .saturno{
     width: 40px;
@@ -2296,8 +2301,8 @@ animation: flash 5s linear infinite;
     animation: orbita7 294s linear infinite;
 }
 @keyframes orbita7{
-    from{transform:rotate(0deg)translateX(370px) rotate(0deg);}
-    to{transform:rotate(360deg)translateX(370px) rotate(-360deg);}
+    from{transform:rotate(0deg)translateX(420px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(420px) rotate(-360deg);}
 }
 .urano{
     width: 24px;
@@ -2313,8 +2318,8 @@ animation: flash 5s linear infinite;
     animation: orbita8 838s linear infinite;
 }
 @keyframes orbita8{
-    from{transform:rotate(0deg)translateX(440px) rotate(0deg);}
-    to{transform:rotate(360deg)translateX(440px) rotate(-360deg);}
+    from{transform:rotate(0deg)translateX(480px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(480px) rotate(-360deg);}
 }
 .netuno{
     width: 18px;
@@ -2330,8 +2335,8 @@ animation: flash 5s linear infinite;
     animation: orbita9 1638s linear infinite;
 }
 @keyframes orbita9{
-    from{transform:rotate(0deg)translateX(480px) rotate(0deg);}
-    to{transform:rotate(360deg)translateX(480px) rotate(-360deg);}
+    from{transform:rotate(0deg)translateX(520px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(520px) rotate(-360deg);}
 }
 .plutao{
     width: 9px;
@@ -2347,6 +2352,30 @@ animation: flash 5s linear infinite;
     animation: orbita10 1800s linear infinite;
 }
 @keyframes orbita10{
-    from{transform:rotate(0deg)translateX(550px) rotate(0deg);}
-    to{transform:rotate(360deg)translateX(550px) rotate(-360deg);}
+    from{transform:rotate(0deg)translateX(700px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(700px) rotate(-360deg);}
 }
+.asteroides_meteoritos2{
+    width: 1200px;
+    height: 1200px;
+    border: none;
+    background-image: url(maps/asteroides_meteoritos2.png);
+    background-size: cover;
+    position: absolute;
+    left: 90px;
+    top: -200px;
+    z-index: 1;
+    -webkit-animation-duration:50s; -moz-animation-duration:50s;
+}
+.asteroides_meteoritos2 {
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit2;
+    
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit2;
+}
+@-webkit-keyframes orbit2 { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+
+@-moz-keyframes orbit2 { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
